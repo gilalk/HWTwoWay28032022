@@ -1,7 +1,12 @@
-<select  name="cars" id="cars" [(ngModel)]="car">
-    <option value="Skoda-Fabia">Skoda-Fabia</option>
-    <option value="Toyota-Yaris">Toyota-Yaris</option>
-    <option value="Honda-Civic">Honda-Civic</option>
-</select>
-
-<app-car-daughter [selectedCar]="car"></app-car-daughter>
+<div class="container position-relative">
+    <select class="form-select mb-3" aria-label="Default select example" 
+            name="cars" id="cars" [(ngModel)]="car">
+        <option value="Skoda-Fabia">Skoda-Fabia</option>
+        <option value="Toyota-Yaris">Toyota-Yaris</option>
+        <option value="Honda-Civic">Honda-Civic</option>
+    </select>
+    <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" (click)="onClearButton()">Clear</button>
+    </div>
+    <app-car-daughter [selectedCar]="car"></app-car-daughter>
+</div>

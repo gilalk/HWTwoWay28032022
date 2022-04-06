@@ -13,4 +13,8 @@ export class CarFatherComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  onClearButton() {
+    this.car = '';
+  }
 }
