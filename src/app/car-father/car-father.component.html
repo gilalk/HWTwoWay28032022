@@ -1,0 +1,7 @@
+<select  name="cars" id="cars" [(ngModel)]="car">
+    <option value="Skoda-Fabia">Skoda-Fabia</option>
+    <option value="Toyota-Yaris">Toyota-Yaris</option>
+    <option value="Honda-Civic">Honda-Civic</option>
+</select>
+
+<app-car-daughter [selectedCar]="car"></app-car-daughter>
