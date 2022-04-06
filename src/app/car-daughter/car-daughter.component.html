@@ -1,14 +1,51 @@
-<div [ngSwitch]="selectedCar">
+<div class="card" [ngSwitch]="selectedCar">
+    <div *ngSwitchCase="''">
+        <img src="./assets/pics/cars.jpg" class="card-img-top" alt="" width="300">
+        <div class="card-body">
+            <h4 class="card-title">Gil Cars</h4>
+            <p class="card-text">
+                Our Cars - Your Success!
+            </p>
+        </div>
+    </div>
     <div *ngSwitchCase="'Skoda-Fabia'">
-        <h1 class="text-center">{{selectedCar}}</h1>
-        <img src="./assets/pics/skoda-fabia-new-Front.jpg" class="rounded mx-auto d-block" alt="" width="300">
+        <img src="./assets/pics/skoda-fabia-new-Front.jpg" class="card-img-top" alt="" width="300">
+        <div class="card-body">
+            <h4 class="card-title">{{selectedCar}}</h4>
+            <p class="card-text">
+                Choose the all-new ŠKODA FABIA and make your choice your voice. You’ll always remain unique thanks to
+                the customised look, smart equipment and unique Simply Clever features. Self-assured and roomy, boasting
+                top quality workmanship, not only will it impress all urban explorers, but is also ideal for the needs
+                of a young family
+            </p>
+            <a href="https://www.skoda.co.il/" class="btn btn-primary">Skoda Site</a>
+        </div>
     </div>
     <div *ngSwitchCase="'Toyota-Yaris'">
-        <h1 class="text-center">{{selectedCar}}</h1>
-        <img src="./assets/pics/2020-toyota-gr-yaris.jpg" class="rounded mx-auto d-block" alt="" width="300">
+        <img src="./assets/pics/2020-toyota-gr-yaris.jpg" class="card-img-top" alt="" width="300">
+        <div class="card-body">
+            <h4 class="card-title">{{selectedCar}}</h4>
+            <p class="card-text">
+                toyota yaris new Front. toyota yaris new Side. toyota yaris new Rear. toyota yaris new Interior. toyota
+                yaris new Extra ..
+            </p>
+            <a href="https://www.toyota.co.il/" class="btn btn-primary">Toyota Site</a>
+        </div>
     </div>
     <div *ngSwitchCase="'Honda-Civic'">
-        <h1 class="text-center">{{selectedCar}}</h1>
-        <img src="./assets/pics/2022-honda-civic-si-2.jpg" class="rounded mx-auto d-block" alt="" width="300">
+        <img src="./assets/pics/2022-honda-civic-si-2.jpg" class="card-img-top" alt="" width="300">
+        <div class="card-body">
+            <h4 class="card-title">{{selectedCar}}</h4>
+            <p class="card-text">
+                The all-new 2022 Honda Civic Sedan turns up the fun, with a sporty ride, spacious cabin and available
+                Bose audio.
+            </p>
+            <a href="https://honda.co.il/" class="btn btn-primary">Honda Site</a>
+        </div>
     </div>
 </div>
+
+<!--
+    rounded mx-auto d-block
+
+-->
